@@ -2,7 +2,7 @@
   <div class="login">
     <img src="assets/images/login.svg" class="login-img">
     <h4>Login</h4>
-    <form [formGroup]="form">
+    <form [formGroup]="form" (ngSubmit)="submit()">
       <mat-form-field>
         <mat-label>Usuario</mat-label>
         <input matInput formControlName="user" autocomplete="off" label="Usuario">
