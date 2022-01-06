@@ -2,18 +2,21 @@
   <div class="login">
     <img src="assets/images/login.svg" class="login-img">
     <h4>Login</h4>
-    <mat-form-field appearance="fill">
-      <mat-label>Usuario</mat-label>
-      <input matInput>
-    </mat-form-field>
-    <mat-form-field appearance="fill">
-      <mat-label>Contraseña</mat-label>
-      <input matInput [type]="hide ? 'password' : 'text'">
-      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-      </button>
-    </mat-form-field>
-    <button class="mat-raised-button login-button">Login</button>
+    <form [formGroup]="form">
+      <mat-form-field>
+        <mat-label>Usuario</mat-label>
+        <input matInput formControlName="user" autocomplete="off" label="Usuario">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Contraseña</mat-label>
+        <input formControlName="password" matInput autocomplete="off" [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+      <button type="submit" class="mat-raised-button login-button">Login</button>
+    </form>
   </div>
 </div>
 
