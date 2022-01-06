@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
     const user = this.form.value.user;
     const password = this.form.value.password;
 
+    // just test credentials for a non-sql login
     if (user == 'amagna' && password == 'ihavebeenpwned') {
       this.success()
       this._router.navigate(['dashboard']).then(r => DashboardComponent )
