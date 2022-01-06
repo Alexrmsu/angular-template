@@ -1,0 +1,32 @@
+.body{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  background-color: rebeccapurple;
+}
+
+
+.login{
+  width: 100%;
+  text-align: center;
+  max-width: 350px;
+}
+
+.login-img{
+  width: 100%;
+  max-width: 350px;
+  max-height: 300px;
+  padding-bottom: 50px;
+}
+
+h4{
+  color: white;
+  padding-bottom: 20px;
+  font-family: "Segoe UI Black", serif;
+}
+
+.mat-form-field{
+  width: 300px;
+  color: white;
+}
