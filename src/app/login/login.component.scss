@@ -1,4 +1,4 @@
-.body{
+.body {
   display: flex;
   justify-content: center;
   height: 100%;
@@ -7,39 +7,39 @@
 }
 
 
-.login{
+.login {
   width: 100%;
   text-align: center;
   max-width: 350px;
 }
 
-.login-img{
+.login-img {
   width: 100%;
   max-width: 350px;
   max-height: 300px;
   padding-bottom: 50px;
 }
 
-.login-button{
-  background-image: linear-gradient(100deg,rebeccapurple, purple);
+.login-button {
+  background-image: linear-gradient(100deg, rebeccapurple, purple);
   height: 60px;
   width: 300px;
 }
 
-.login-button:hover{
-  background-image: linear-gradient(to left,darkorange,orange);
+.login-button:hover {
+  background-image: linear-gradient(to left, darkorange, orange);
   height: 60px;
   width: 300px;
 }
 
 
-h4{
+h4 {
   color: white;
   padding-bottom: 20px;
   font-family: "Segoe UI Black", serif;
 }
 
-.mat-form-field{
+.mat-form-field {
   width: 300px;
   color: white;
 }
