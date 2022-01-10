@@ -10,10 +10,6 @@
       <mat-form-field>
         <mat-label>Contraseña</mat-label>
         <input formControlName="password" matInput autocomplete="off" [type]="hide ? 'password' : 'text'">
-        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-                [attr.aria-pressed]="hide">
-          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-        </button>
       </mat-form-field>
       <button type="submit" class="mat-raised-button login-button">Login</button>
       <router-outlet></router-outlet>

@@ -11,7 +11,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
-import { CrudComponent } from './crud/crud.component';
+import {CrudComponent} from './crud/crud.component';
 
 @NgModule({
   declarations: [
