@@ -11,8 +11,6 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatSnackBar, MatSnackBarModule} from "@angular/material/snack-bar";
-import {AngularFireModule} from "@angular/fire/compat";
-import {environment} from "../environments/environment";
 import { CrudComponent } from './crud/crud.component';
 
 @NgModule({
@@ -32,7 +30,6 @@ import { CrudComponent } from './crud/crud.component';
     MatButtonModule,
     ReactiveFormsModule,
     MatSnackBarModule,
-    AngularFireModule
   ],
   providers: [],
   bootstrap: [AppComponent]
